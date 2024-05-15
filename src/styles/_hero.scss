@@ -1,0 +1,46 @@
+.hero{
+    padding: 6.4vw; //viewport width
+    min-height: 66vh; //viewport height
+    background-image: url(../images/image_hero.jpg);
+    text-align: center;
+    background-size: cover;
+
+    &__content{
+        max-width: 720px;
+
+        &__branding{
+            margin: 0 auto 16px;
+        }
+
+        .title--small{
+            margin-bottom: 36px;
+        }
+
+        &__playing{
+            list-style: none;
+            padding: 16px;
+            background-color: #fff;
+            border: none;
+            border-radius: 40px;
+            width: 220px;
+            
+            
+            img{
+                max-width: 12px;
+                margin-right: 4px;
+                margin-top: 4px;
+            }
+    
+            a{
+                text-decoration: none;
+                color: rgb(79, 77, 77);
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        }
+    }
+
