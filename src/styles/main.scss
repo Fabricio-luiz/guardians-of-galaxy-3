@@ -1,6 +1,7 @@
 @use "hero";
 @use "overview";
 @use "trailer";
+@use "movie";
 
 *{
     margin: 0;
@@ -49,7 +50,7 @@ body{
 }
 
 .title--small{
-    @include title(21px);
+    @include title(24px);
 }
 
 .link-text{

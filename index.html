@@ -36,57 +36,97 @@
     <!--Movie-->
     <section class="movie">
         <nav class="movie__tabs"> <!--Menu navegação-->
-            <button class="movie__tabs__button">
-                Atores
+            <button data-tab-button="actors" class="movie__tabs__button">
+                Elenco
             </button>
-            <button class="movie__tabs__button">
+            <button data-tab-button="charactes" class="movie__tabs__button">
                 Personagens
             </button>
         </nav>
-        <ul data-tab-id="actors" class="movie__list movie__list--is-active">
+        <ul data-tab-id="actors" class="movie__list movie__list--is-active"> <!--ATORES-->
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+                <img src="./dist/images/actors/1_Chris_Pratt_senhor_das estrelas.jpg" alt="Chris Pratt">
+                <p class="text">
+                    Chris Pratt
+                </p>
             </li>
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomen">
+                <img src="./dist/images/actors/2_Zoe_Saldana_gamora.jpg" alt="Zoe Saldana">
+                <p class="text">
+                    Zoë Saldaña
+                </p>
             </li>
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+                <img src="./dist/images/actors/3_Dave_Bautista_Drax.jpg" alt="Dave Bautista">
+                <p class="text">
+                    Dave Bautista
+                </p>
             </li>
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./dist/images/actors/4_Karen_Gillan_nebula.jpg" alt="Karen Gillan">
+                <p class="text">
+                    Karen Gillan
+                </p>
             </li>
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Santa Clauses">
+                <img src="./dist/images/actors/5_Pom_Klementieff_mantis.jpg" alt="Pom Klementieff">
+                <p class="text">
+                    Pom Klementieff
+                </p>
             </li>
             <li class="movie__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+                <img src="./dist/images/actors/6_Vin_Diesel_groot.jpg" alt="Vin Diesel">
+                <p class="text">
+                    Vin Diesel
+                </p>
+            </li>
+            <li class="movie__list__item">
+                <img src="./dist/images/actors/7_Bradley_Cooper_rocket.jpg" alt="Bradley Cooper">
+                <p class="text">
+                    Bradley Cooper
+                </p>
+            </li>
+            <li class="movie__list__item">
+                <img src="./dist/images/actors/8_Maria_Bakalova_cosmo.jpg" alt="Maria Bakalova">
+                <p class="text">
+                    Maria Bakalova
+                </p>
             </li>
         </ul>
-        <ul data-tab-id="charactes" class="movie__list movie__list--is-active">
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+        <ul data-tab-id="charactes" class="movie__list"> <!--PERSONAGENS-->
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/1_starLord.png" alt="Senhor das estrelas">
             </li>
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomen">
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/2_gamora.png" alt="Gamora">
             </li>
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/3_drax.png" alt="Drax">
             </li>
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/4_nebula.png" alt="Nebula">
             </li>
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Santa Clauses">
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/5_mantis.png" alt="Mantis">
             </li>
-            <li class="movie__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/6_groot.png" alt="Groot">
+            </li>
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/7_rocket.png" alt="Rocket">
+            </li>
+            <li class="movie__list__item__character">
+                <img src="./dist/images/characters/8_cosmo.png" alt="Cosmo">
             </li>
         </ul>
     <!--Trailer-->
     <section class="trailer">
         <h2 class="title">Trailer</h2>
         <div class="trailer__play">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/JPaGymqJyfA?si=qqD5cbTz5B4NLLgR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </section>
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/JPaGymqJyfA?si=qqD5cbTz5B4NLLgR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
