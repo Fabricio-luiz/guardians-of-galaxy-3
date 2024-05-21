@@ -1,27 +1,26 @@
+@use "variaveis";
 @use "hero";
 @use "overview";
 @use "trailer";
 @use "movie";
+@use "footer";
+@use "header";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    list-style: none;
 }
 
-$corDeFundo: #000000;
-$corTextoPrincipal: rgb(192,192,192);
-$corTextoSecundario: #f9f9f9;
-
-
 body{
-    background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
 }
 
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 .text--big{
@@ -38,7 +37,7 @@ body{
 
 @mixin title($fontSize: 40px){
     @include text($fontSize);
-    color: $corTextoSecundario;
+    color: variaveis.$corTextoSecundario;
 }
 
 .title--big{
@@ -55,6 +54,29 @@ body{
 
 .link-text{
     @include text(18px);
-    color: $corTextoSecundario;
+    color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button{ //Botão primario
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: #000;
+    background-color: variaveis.$corFundoBotaoSecundario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corFundoBotaoSecundario;
+
+    &:hover{
+        background-color: lighten(variaveis.$corFundoBotaoSecundario, 3%);
+    }
 }

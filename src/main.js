@@ -28,3 +28,4 @@ function removeBotaoAtivo(){
         buttons[i].classList.remove('movie__tabs__button--is-active')
     }
 }
+

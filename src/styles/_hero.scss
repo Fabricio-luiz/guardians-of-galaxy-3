@@ -1,3 +1,5 @@
+@use "variaveis";
+
 .hero{
     padding: 5.6vw; //viewport width
     min-height: 100vh; //viewport height
@@ -9,32 +11,40 @@
         max-width: 720px;
 
         &__branding{
-            margin: 56px auto;
+            margin: 72px auto 16px;
         }
 
         .text--big{
-            margin-bottom: 36px;
+            margin-bottom: 16px;
+        }
+
+        p{
+            margin-bottom: 8px;
+            color: variaveis.$corTextoHover;
+            font-weight: bold;
         }
 
         &__playing{
             list-style: none;
             padding: 12px;
-            background-color: rgb(255 255 255);
+            background-color: variaveis.$corFundoBotaoPrimario;
             border: none;
-            border-radius: 40px;
+            border-radius: 4px;
             width: 160px;
+            text-align: center;
+
                         
             img{
-                max-width: 12px;
-                margin-right: 4px;
-                margin-top: 4px;
+                max-width: 14px;
+ 
             }
     
             a{
                 text-decoration: none;
                 color: rgb(0, 0, 0);
-                font-size: 16px;
-                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
 

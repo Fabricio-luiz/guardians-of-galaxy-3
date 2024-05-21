@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <!--header/cabeçalho-->
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img src="./dist/images/marvel_Logo.png" alt="Marvel" class="header__logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="https://www.disneyplus.com/pt-br/identity/sign-up/enter-email?pinned=true" target="_blank" class="button button--obter">Obter Disney+</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="https://www.disneyplus.com/identity/login/enter-email?pinned=true" target="_blank" class="button button--iniciar">Iniciar sessão</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!--hero-->
     <section class="hero">
         <div class="hero__content">
@@ -16,6 +32,9 @@
             <h3 class="text--big">
                 Peter Quill vai reunir sua equipe para uma perigosa missão: salvar Rocket
             </h3>
+            <p class="text">
+                Clique abaixo e confira
+            </p>
             <button class="hero__content__playing">
                 <img src="./dist/images/botao-play.png" alt="play" class="play">
                 <a href="https://www.disneyplus.com/pt-br/movies/guardians-of-the-galaxy-vol-3/1tmc3nPw04S2"; target="_blank">Disney+</a>
@@ -36,7 +55,7 @@
     <!--Movie-->
     <section class="movie">
         <nav class="movie__tabs"> <!--Menu navegação-->
-            <button data-tab-button="actors" class="movie__tabs__button">
+            <button data-tab-button="actors" class="movie__tabs__button movie__tabs__button--is-active">
                 Elenco
             </button>
             <button data-tab-button="charactes" class="movie__tabs__button">
@@ -119,6 +138,7 @@
                 <img src="./dist/images/characters/8_cosmo.png" alt="Cosmo">
             </li>
         </ul>
+    </section>    
     <!--Trailer-->
     <section class="trailer">
         <h2 class="title">Trailer</h2>
@@ -126,6 +146,41 @@
             <iframe width="1120" height="630" src="https://www.youtube.com/embed/JPaGymqJyfA?si=qqD5cbTz5B4NLLgR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
+    <!--Rodapé-->
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./dist/images/disneyplus.svg" alt="Disney+" class="footer__logo">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e Condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados do Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © Disney © Disney • Pixar © & ™ Lucasfilm LTD © 2024 MARVEL. Reservados todos os direitos, Disney Entertainment
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20.
+            </p>
+        </div>
+    </footer>
 
     <script src="./src/main.js"></script>
 </body>
