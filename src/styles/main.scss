@@ -33,10 +33,26 @@ body{
 
 .text--big{
     @include text(21px);
+
+    @media (max-width: 768px){
+        @include text(18px);
+    }
+
+    @media (max-width: 1024px){
+        @include text(18px);
+    }
 }
 
 .text{
     @include text;
+
+    @media (max-width: 768px){
+        @include text(14px);
+    }
+
+    @media (max-width: 1024px){
+        @include text(14px);
+    }
 }
 
 .text--small{
@@ -50,14 +66,40 @@ body{
 
 .title--big{
     @include title(44px);
+
+    @media (max-width: 768px){
+        @include title(26px);
+    }
+
+    @media (max-width: 1024px){
+        @include title(26px);
+    }
+
 }
 
 .title{
     @include title;
+
+    @media (max-width: 768px){
+        @include title(22px);
+    }
+
+    @media (max-width: 1024px){
+        @include title(22px);
+    }
 }
 
 .title--small{
     @include title(24px);
+
+    @media (max-width: 768px){
+        @include title(20px);
+    }
+
+    @media (max-width: 1024px){
+        @include title(20px);
+    }
+
 }
 
 .link-text{

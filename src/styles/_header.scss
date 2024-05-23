@@ -10,13 +10,13 @@
 
     &--is-hidden{
         background-color: transparent;
-        transition: background-color .3s ease;
+        transition: background-color .5s ease;
 
         .header{
             &__logo, &__links__item:first-child{
                 opacity: 0;
                 visibility: hidden;
-                transition: opacity .3s ease;
+                transition: opacity .5s ease;
             }
         }
     }
@@ -26,14 +26,16 @@
         display: flex;
         justify-content: space-between;
 
-        img{
-            margin: 8px
+        @media(max-width: 768px){
+            padding: 8px 12px 8px 20px;
         }
     }
 
     &__logo{
         max-width: 80px;
         width: 100%;
+        margin: 8px;
+        transition: opacity .5s ease;
     }
 
     &__links{
@@ -43,6 +45,7 @@
 
         &__item{
             margin-right: 8px;
+            transition: opacity .5s ease;
 
             .button{
                 
@@ -51,29 +54,33 @@
                     border-color: variaveis.$corFundoBotaoSecundario;
             
                     &:hover{
-                        background-color: lighten(variaveis.$corFundoBotaoSecundario, 3%);
+                        background-color: lighten(variaveis.$corFundoBotaoSecundario, 3%); 
                     }
                 }
             
                 &--iniciar{ //Botão iniciar
                     background-color: rgba(variaveis.$corFundoBotaoDark, 0.8);
                     border-color: variaveis.$corTextoSecundario;
-                    color: #fff;
+                    color: variaveis.$corTextoSecundario;
             
                     &:hover{
                         background-color: variaveis.$corTextoSecundario;
-                        color: #000;
+                        color: variaveis.$corFundoBotaoDark;
                     }
                 }
 
+                @media(max-width:768px){
+                    font-size: 13px;
+                    padding: 8px 11px;
+                    height: 40px;
+                    letter-spacing: 0;
+                    font-size: 12px;
+                }
+
             }
-            
         }
     }
 }
 
-.hidden{
-    visibility: hidden;
-}
 
 

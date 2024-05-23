@@ -7,6 +7,23 @@
     text-align: center;
     background-size: cover;
 
+    @media (max-width: 768px){
+        background-image: url(../images/hero_image_mobile_final_menor.jpg);
+        padding-top: 60vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    @media (max-width: 1024px){
+        background-image: url(../images/hero_image_tablet_final_menor.jpg);
+        padding-top: 60vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+
     .button{
         margin-top: 8px;
         margin-bottom: 8px;
@@ -15,8 +32,27 @@
     &__content{
         max-width: 720px;
 
+        @media (min-width: 769px) and (max-width: 1024px){
+            margin: 0 auto;
+        }
+
             &__branding{
                 margin: 72px auto 16px;
+
+                @media (max-width: 768px){
+                    padding-top: 24px;
+
+                    img{
+                        width: 320px;
+                    }
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px){
+
+                    img{
+                        margin-top: -100px;
+                    }
+                }
             }
 
             .text--big{
@@ -30,10 +66,15 @@
             }
 
             &__playing{
+                margin-top: 16px;
+
+                @media (max-width: 768px){
+                    margin-top: 16px;
+                }
 
                 &__play{
-                    width: 200px;
-                    margin: 0 auto;
+                    width: 160px;
+                    margin: 0 auto; 
                 } 
             }
         }

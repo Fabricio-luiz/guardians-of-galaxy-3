@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+        @media (max-width: 768px){
+        display: block;
+    }
+
     
     img{
         max-width: 100%;
@@ -10,10 +15,21 @@
     }
 
     &__text_container{
+
+        @media (max-width: 768px){
+            padding: 16px;
+
+            h2{
+                text-align: center;
+            }
+        }
+
         padding: 0 2vw;  
 
         h2{
             margin-bottom: 24px;
+
+            
         }
 
         p{

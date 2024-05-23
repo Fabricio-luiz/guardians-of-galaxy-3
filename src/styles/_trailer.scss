@@ -2,7 +2,6 @@
 
 .trailer{
     padding: 5.6vw; //viewport width
-
     text-align: center;
     justify-content: center;
 
@@ -15,6 +14,17 @@
         
         iframe{
             box-shadow: 10px 10px 10px rgba(109, 109, 109, 0.3);
+
+            @media (max-width: 768px){
+                max-width: 420px;
+                max-height: 280px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px){
+                max-width: 800px;
+                max-height: 400px;
+            }
+
         }
     }
 }
