@@ -1,0 +1,29 @@
+@use "variaveis";
+
+.gallery{
+    padding:5.6vw;
+    text-align: center;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        gap: 24px;
+        margin-top: 40px;
+        justify-content: center;
+
+        &__item{
+
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+                box-shadow: 10px 10px 10px rgba(109, 109, 109, 0.3);
+
+                &:hover{
+                    transform: scale(1.2);
+                    transition : transform ease-out .3s;
+                    border: 2px solid variaveis.$corFundoBotaoPrimario;
+                }
+            }
+        }
+    }
+}

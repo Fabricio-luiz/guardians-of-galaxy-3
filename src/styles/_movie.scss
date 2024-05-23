@@ -21,9 +21,11 @@
             img{
                 max-width: 100%;
                 border-radius: 4px;
+                //box-shadow: 3px 3px 5px 2px rgba(72, 71, 71, 0.3);
 
                 &:hover{
                     transform: scale(1.1);
+                    transition : transform ease-out .3s;
                 }
             }
 
@@ -47,6 +49,7 @@
 
                 &:hover{
                     transform: scale(1.1);
+                    transition : transform ease-out .3s;
                 }
             }
         }
